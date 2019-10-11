@@ -26,7 +26,7 @@ fetch(endpoint)
 
 //4)Write a function to filter the array based on data entered into the search field. Function parameters: search term and the cities array.  Function should return
 
-function filterResults(wordToMatch, cities){
+function filterResults(wordToMatch, cities) {
   return cities.filter(place => {
     const regex = new RegExp(wordToMatch, 'gi');
     return place.city.match(regex) || place.state.match(regex)
